@@ -1,0 +1,94 @@
+
+body{
+    padding-left: 20px;
+    background-color: #F5F5DC !important;
+}
+
+h1, h2, h3, h4{
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.class{
+    text-decoration: none;
+    size: 15px;
+}
+
+.phrase-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.container div {
+    margin: 10px;
+    border: 0.5vh solid #ccc;
+    padding: 10px; 
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 5px 0;
+    display: inline;
+}
+
+.site-footer{
+    align-items: center;
+    margin-top: 100px;
+}
+
+a:hover{
+    color : rgba(112,114,110);
+}
+
+a:visited{
+    color: green;
+}
+
+#photoCookie{
+    display: flex;
+    justify-content: center;
+}
+
+#map {
+    display: grid;
+    place-items: center;
+}
+
+#logo{
+    width: 5%;
+}
+
+@media only screen and (max-device-width: 828px) and (max-device-height: 1792px) {
+    section {
+        padding: 20px;
+    }
+    h1, h2, h3 {
+        margin-top: 15px;
+    }
+    #logo{
+        width: 15%;
+    }
+    
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    section {
+        padding: 10px;
+    }
+    h1, h2, h3 {
+        margin-top: 15px;
+    }
+    #logo{
+        width: 10%;
+    }
+
+}
+
+
