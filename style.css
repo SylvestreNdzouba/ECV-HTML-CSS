@@ -3,13 +3,41 @@ body{
     padding-left: 20px;
     background-color: #F5F5DC !important;
 }
+/*#presentation {
+    font-size: 14px;
+    transition-property: font-size;
+    transition-duration: 4s;
+    transition-delay: 2s;
+  }
+  
+#presentation:hover {
+    font-size: 36px;
+}*/
+
+section{
+    padding:30px;
+}
+#photoCookie img {
+    max-width: 100%;
+    height: auto;
+}
+
+#photoCookie:hover {
+    transform: scale(1.2); 
+    cursor: pointer; 
+}
+
 
 h1, h2, h3, h4{
     display: flex;
     justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana;
     margin-top: 40px;
     margin-bottom: 30px;
+}
+
+div{
+    font-family: 'Courier New';
 }
 
 .class{
@@ -17,7 +45,7 @@ h1, h2, h3, h4{
     size: 15px;
 }
 
-.phrase-footer{
+.phrase-footer, .texte{
     display: flex;
     justify-content: center;
 }
@@ -51,11 +79,6 @@ a:visited{
     color: green;
 }
 
-#photoCookie{
-    display: flex;
-    justify-content: center;
-}
-
 #map {
     display: grid;
     place-items: center;
@@ -66,6 +89,9 @@ a:visited{
 }
 
 @media only screen and (max-device-width: 828px) and (max-device-height: 1792px) {
+    .texte{
+        font-size: 20px;
+    }
     section {
         padding: 20px;
     }
@@ -75,7 +101,6 @@ a:visited{
     #logo{
         width: 15%;
     }
-    
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -91,4 +116,17 @@ a:visited{
 
 }
 
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+  }
+.contenu-site{
+    margin-top: 100px;
+}
 

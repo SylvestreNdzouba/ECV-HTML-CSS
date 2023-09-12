@@ -10,6 +10,9 @@
         <title>Recette cookie</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="gateau.css">
+        <link rel="stylesheet" href="animation.css">
+
+        <script defer="true" src="script.js"></script>
 
         
     </head>
@@ -24,7 +27,7 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#presentation">Présentaion</a>
+                        <a class="nav-link active" aria-current="page" href="#presentation">Présentation</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">Nos ingrédients</a>
@@ -36,7 +39,7 @@
                         <a class="nav-link" target="_blank" aria-disabled="true" href="https://fr.wikipedia.org/wiki/Cookie_(cuisine)">Plus d'informations</a>
                       </li>
                       <li class="nav-item">
-                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <button id="modalButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Modal
                       </button>
                       </li>
@@ -50,7 +53,7 @@
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                              .Ca fonctionne
+                              Ca fonctionne !
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -68,28 +71,30 @@
         <section class ="contenu-site">
 
             <h1 id="presentation">Présentation</h1>
-            <div>
-                Depuis notre création, nous sommes passionnés par l'art de la pâtisserie, et notre spécialité, ce sont les cookies. Nous avons fait de la création de délicieux cookies une véritable œuvre d'art, en utilisant des ingrédients de première qualité et en appliquant des méthodes traditionnelles de fabrication.            </div><br>
-            <div>
-                Chacun de nos cookies est préparé avec soin, à partir de recettes familiales transmises de génération en génération. Nous croyons en la simplicité et en la qualité des ingrédients, en veillant à ce que chaque bouchée soit une explosion de saveurs.            </div><br>
-            <div>  
-                Nous utilisons uniquement des ingrédients de première qualité, tels que du beurre pur, des œufs frais et des pépites de chocolat de la plus haute qualité. Nos cookies sont cuits à la perfection chaque jour pour garantir qu'ils arrivent entre vos mains avec leur saveur et leur texture optimales.            </div><br>
-            <div>
-                Nous proposons une gamme variée de cookies, allant des classiques comme le chocolat noir et les noix de pécan aux saveurs plus exotiques telles que la lavande et le caramel salé. Vous trouverez toujours un cookie qui satisfera vos papilles gustatives.            </div><br>
-            <div>
-                Nous sommes fiers de fournir un service attentionné et une expérience de dégustation exceptionnelle. Chaque cookie que nous fabriquons est une expression de notre amour pour la pâtisserie, et nous sommes ravis de le partager avec vous.            </div>
+              <div class="divPres texte">
+                  Depuis notre création, nous sommes passionnés par l'art de la pâtisserie, et notre spécialité, ce sont les cookies. Nous avons fait de la création de délicieux cookies une véritable œuvre d'art, en utilisant des ingrédients de première qualité et en appliquant des méthodes traditionnelles de fabrication.            </div><br>
+              <div class="divPres texte">
+                  Chacun de nos cookies est préparé avec soin, à partir de recettes familiales transmises de génération en génération. Nous croyons en la simplicité et en la qualité des ingrédients, en veillant à ce que chaque bouchée soit une explosion de saveurs.            </div><br>
+              <div class="divPres texte">  
+                  Nous utilisons uniquement des ingrédients de première qualité, tels que du beurre pur, des œufs frais et des pépites de chocolat de la plus haute qualité. Nos cookies sont cuits à la perfection chaque jour pour garantir qu'ils arrivent entre vos mains avec leur saveur et leur texture optimales.            </div><br>
+              <div class="divPres texte">
+                  Nous proposons une gamme variée de cookies, allant des classiques comme le chocolat noir et les noix de pécan aux saveurs plus exotiques telles que la lavande et le caramel salé. Vous trouverez toujours un cookie qui satisfera vos papilles gustatives.            </div><br>
+              <div class="divPres texte">
+                  Nous sommes fiers de fournir un service attentionné et une expérience de dégustation exceptionnelle. Chaque cookie que nous fabriquons est une expression de notre amour pour la pâtisserie, et nous sommes ravis de le partager avec vous.            </div>
 
             
             <h1 id ="Ingredient">Nos ingrédients</h1>
-            <ol>
-                <li>Chocolat</li>
-                <li>Vanille</li>
-                <li>Fraise</li>
-                <li>3 oeufs</li>
-                <li>50g de Farine</li>
-                <li>10g de sucre</li>
-                <li>20g de beurre</li>
-            </ol>
+            <div>
+              <ol>
+                  <li>Chocolat</li>
+                  <li>Vanille</li>
+                  <li>Fraise</li>
+                  <li>3 oeufs</li>
+                  <li>50g de Farine</li>
+                  <li>10g de sucre</li>
+                  <li>20g de beurre</li>
+              </ol>
+            </div>
             <h2>Résultats</h2>
 
             <div id="photoCookie">
@@ -97,11 +102,11 @@
             </div>
 
         <h3>Click & Collect</h3>
-        <div>
-            Latius iam disseminata licentia onerosus bonis omnibus Caesar nullum post haec adhibens modum orientis latera cuncta vexabat nec honoratis parcens nec urbium primatibus nec plebeiis.
+        <div class = "texte">
+            Venez récupérer vos patisseries au 26 rue Raze à Bordeaux. Ca sera un honneur pour nous de vous les remettre en main propre.
         </div><br>
         <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.5190362300136!2d-0.5731695240580791!3d44.85172737409545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55287900d17d57%3A0xa22c123cc7a76593!2s26%20Rue%20Raze%2C%2033000%20Bordeaux!5e0!3m2!1sfr!2sfr!4v1694426428665!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2828.5190362300136!2d-0.5731695240580791!3d44.85172737409545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55287900d17d57%3A0xa22c123cc7a76593!2s26%20Rue%20Raze%2C%2033000%20Bordeaux!5e0!3m2!1sfr!2sfr!4v1694426428665!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
         <h3>Petit questionnaire</h3>
